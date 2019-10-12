@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 
 import axios from "axios";
+import PlayerList from "./Hooks/PlayerList"
 
 
 class App extends React.Component {
@@ -30,7 +31,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Hello World!</h1>
+        <PlayerList playerInfo={this.state.playerInfo}/>
+        {/* <h1>Hello World!</h1> */}
       </div>
     );
 
