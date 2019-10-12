@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-
 import axios from "axios";
 import PlayerList from "./Hooks/PlayerList"
+import DarkMode from './Hooks/CustomHooks/DarkMode';
 
 
 class App extends React.Component {
@@ -31,8 +31,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <DarkMode />
         <PlayerList playerInfo={this.state.playerInfo}/>
-        {/* <h1>Hello World!</h1> */}
       </div>
     );
 
