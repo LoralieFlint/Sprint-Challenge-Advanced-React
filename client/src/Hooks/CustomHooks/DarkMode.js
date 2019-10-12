@@ -10,7 +10,7 @@ const DarkMode = (initialValue) => {
 
     return (
         <div>
-            <button onClick={toggleBackground}>ON / OFF</button>
+            <button onClick={toggleBackground}>ON - OFF</button>
         </div>
     )
 }
